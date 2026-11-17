@@ -1,0 +1,33 @@
+# Built files & IDE configs
+*.iml
+.kotlin
+.gradle
+**/build/
+!src/**/build/
+local.properties
+.idea
+.DS_Store
+captures
+.externalNativeBuild
+.cxx
+
+# Xcode & iOS
+xcuserdata
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+iosApp/Pods/
+DerivedData/
+
+# SQLDelight & Databases
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# Generated artifacts & logs
+*.log
+node_modules/
