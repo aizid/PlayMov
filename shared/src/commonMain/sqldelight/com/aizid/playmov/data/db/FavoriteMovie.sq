@@ -1,0 +1,20 @@
+CREATE TABLE FavoriteMovie (
+    id INTEGER NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    posterPath TEXT,
+    voteAverage REAL NOT NULL DEFAULT 0.0,
+    releaseDate TEXT
+);
+
+selectAllFavorites:
+SELECT * FROM FavoriteMovie;
+
+insertFavorite:
+INSERT OR REPLACE INTO FavoriteMovie(id, title, posterPath, voteAverage, releaseDate)
+VALUES (?, ?, ?, ?, ?);
+
+deleteFavorite:
+DELETE FROM FavoriteMovie WHERE id = ?;
+
+selectFavoriteById:
+SELECT * FROM FavoriteMovie WHERE id = ?;
